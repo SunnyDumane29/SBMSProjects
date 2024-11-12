@@ -11,6 +11,7 @@ public class BankingSector {
 	public String welcomeMsg()
 	{
 		return "Welcome to Spring Boot Security Project";
+	
 		
 	}
 	
