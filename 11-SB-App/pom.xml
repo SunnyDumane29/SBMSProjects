@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.sunnyit</groupId>
-	<artifactId>13-SB-Autowiring</artifactId>
+	<artifactId>11-SB-App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>13-SB-Autowiring</name>
+	<name>11-SB-App</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

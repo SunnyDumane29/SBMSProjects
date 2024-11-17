@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+  
+      <bean id ="student" class= "in.sunnyit.Student">
+      
+      <property name="id" value="102" />
+         <property name="name" value="sunny" />
+         
+         <property name="courses">
+         <list>
+             <value>Java</value>
+             <value>Python</value>
+             <value>AI</value>
+             <value>DotNet</value>
+             <value>PHP</value>
+         </list>
+         </property>
+         
+         <property name="Hobbies">
+         <set>
+            <value>F1</value>
+            <value>cricket</value>
+            <value>Football</value>
+            <value>Bikes</value>
+         </set>
+         
+         </property>
+         
+          
+         <property name="phones">
+         <map>
+         <entry key="contact" value="46688"/> 
+         <entry key="whatsapp" value="234"/> 
+         <entry key="facebook" value="464543688"/> 
+         </map>
+         
+         </property>
+      
+      </bean>
+       
+      
+     
+       
+      
+
+</beans>

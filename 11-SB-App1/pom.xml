@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.sunnyit</groupId>
-	<artifactId>13-SB-Autowiring</artifactId>
+	<artifactId>11-SB-App1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>13-SB-Autowiring</name>
+	<name>11-SB-App1</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -30,9 +30,16 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		   <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+			<version>3.3.5</version>
 		</dependency>
 
 		<dependency>
