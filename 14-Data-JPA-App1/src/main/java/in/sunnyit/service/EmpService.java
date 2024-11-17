@@ -118,16 +118,16 @@ public class EmpService {
 	}
 	
 	//-----------Delete OperAtion----------------------------------------------------------
-//	public void deleteEmployeeID(int id)
-//	{
-//		
-//		empRepo.deleteById(id);
-//		
-//		
-//		System.out.println("Employee deleted Id:"+id);
-//		
-//		
-//	}
+	public void deleteEmployeeID(int id)
+	{
+		
+		empRepo.deleteById(id);
+		
+		
+		System.out.println("Employee deleted Id:"+id);
+		
+		
+	}
 	
 	
 }
