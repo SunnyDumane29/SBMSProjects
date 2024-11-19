@@ -35,9 +35,10 @@ public class Application {
 		
 		//empService.findEmploBySalary(343788.84); // find by salary
 		
-		empService.findEmploBySalaryGreaterThan(343788.84); //find salary Greater than
+		//empService.findEmploBySalaryGreaterThan(343788.84); //find salary Greater than
 		
 		
+		empService.callCustomqyeries(); //custom all queries
 		
 		
 		

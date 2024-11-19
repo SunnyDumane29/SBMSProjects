@@ -117,6 +117,26 @@ public class EmpService {
 		greaterThan.forEach(e -> System.out.println(e));
 	}
 	
+	
+	//-----------Custom queries methods----------------------------------------------------------
+
+	public void callCustomqyeries()
+	{
+//		List<Employee> getallEmp = empRepo.getAllEmplos();
+//		getallEmp.forEach(e -> System.out.println(e));
+		
+		
+//		Employee emoById = empRepo.getEmoById(102);
+//		System.out.println(emoById);
+		
+		
+		List<Employee> allEmplosSQL = empRepo.getAllEmplosSQL();
+		
+		allEmplosSQL.forEach(e -> System.out.println(e));
+	}
+	
+	
+	
 	//-----------Delete OperAtion----------------------------------------------------------
 	public void deleteEmployeeID(int id)
 	{
