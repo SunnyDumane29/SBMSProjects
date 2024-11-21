@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import in.sunnyit.entity.Employee;
@@ -12,11 +13,11 @@ import in.sunnyit.entity.Employee;
 public interface EmpRepository extends CrudRepository<Employee, Integer> {
 	
 	@Query("from Employee")
-	public List<Employee> getAllEmplos(); // SQL
+	public List<Employee> getAllEmplos(); // SQL 
 
 
-	@Query("from Employee where eid= :eid")
-	public Employee getEmoById(Integer id); // HQL positional paramere , parameter binding
+	@Query("SELECT e FROM Employee e WHERE e.eid = :eid")
+	public Employee getEmployeeById(@Param("eid") Integer eid);// HQL positional paramere , parameter binding 
 	
 	
 	@Query(value = "select *from employee" , nativeQuery = true)
@@ -33,6 +34,6 @@ public interface EmpRepository extends CrudRepository<Employee, Integer> {
 	public List<Employee> findByEsalaryGreaterThanEqual(Double esalary);
 	
 	
-
+ 
 }
  

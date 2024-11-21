@@ -122,17 +122,19 @@ public class EmpService {
 
 	public void callCustomqyeries()
 	{
+		//SQL Queries
 //		List<Employee> getallEmp = empRepo.getAllEmplos();
 //		getallEmp.forEach(e -> System.out.println(e));
 		
-		
-//		Employee emoById = empRepo.getEmoById(102);
+		//HQL Query
+//		Employee emoById = empRepo.getEmployeeById(197);
 //		System.out.println(emoById);
 		
+		//Native queries
+//		List<Employee> allEmplosSQL = empRepo.getAllEmplosSQL();
+//		allEmplosSQL.forEach(e -> System.out.println(e));
 		
-		List<Employee> allEmplosSQL = empRepo.getAllEmplosSQL();
 		
-		allEmplosSQL.forEach(e -> System.out.println(e));
 	}
 	
 	
