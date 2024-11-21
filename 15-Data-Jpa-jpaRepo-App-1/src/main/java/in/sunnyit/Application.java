@@ -17,7 +17,13 @@ public class Application {
 		 
 		//empservice.getAllEmps(); // getting all records 
 		
-		empservice.getAllEmpsWithsort(); // getting all records in ascending order or descending order
+		//empservice.getAllEmpsWithsort(); // getting all records in ascending order or descending order
+		
+		//empservice.getAllEmpsPagination();// pagination on perticular reciords
+		
+		empservice.getAllEmpsWithFilters();
+		
+		
 	}
 
 }
