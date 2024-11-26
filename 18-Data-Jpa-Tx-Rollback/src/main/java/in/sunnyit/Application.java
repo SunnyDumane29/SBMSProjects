@@ -10,20 +10,11 @@ import in.sunnyit.service.EmployeeService;
 public class Application {
 
 	public static void main(String[] args) {
-		
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		
-		EmployeeService empservice = context.getBean(EmployeeService.class);
-		 
-		//empservice.getAllEmps(); // getting all records 
+		EmployeeService b1 = context.getBean(EmployeeService.class);
 		
-		//empservice.getAllEmpsWithsort(); // getting all records in ascending order or descending order
-		
-		//empservice.getAllEmpsPagination();// pagination on perticular reciords
-		
-		empservice.getAllEmpsWithFilters(); // filters using QBE
-		
-		
+		b1.saveEmps();
 	}
 
 }
