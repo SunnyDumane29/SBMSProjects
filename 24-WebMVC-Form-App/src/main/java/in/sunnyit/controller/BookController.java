@@ -31,14 +31,14 @@ public class BookController {
 		//todo : saveData in DB
 		
 		ModelAndView mav= new ModelAndView();
-		
+		 
 		mav.addObject("msg","Book saved sucessfulluy ....");
 		mav.setViewName("success");
 
 		return mav;
 	}
 	
-
+ 
 	
 
 }
