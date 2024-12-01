@@ -24,6 +24,7 @@
              <th>Product Name</th>
              <th>Product Price</th>
              <th>Product Qty</th>
+             <th>Action</th>
          </tr>
       </thead>
       
@@ -33,6 +34,12 @@
              <td th:text="${p.pName}"/>
              <td th:text="${p.pPrice}"/>
              <td th:text="${p.pQty}"/>
+             
+             <td>
+              <a href="#" class="btn btn-primary">Edit</a>
+              <a href="#" class="btn btn-danger">Delete</a>
+             </td> 
+             
           </tr>
       </tbody>
     
