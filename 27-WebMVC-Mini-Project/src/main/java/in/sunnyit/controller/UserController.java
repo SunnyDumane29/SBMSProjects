@@ -30,8 +30,7 @@ public class UserController {
 	@PostMapping("/login")
 	public String handleLogin(User user,Model model)
 	{
-		User userObj = 
-				userServiceImpl.getUser(user.getEmail(), user.getPwd());
+		User userObj = userServiceImpl.getUser(user.getEmail(), user.getPwd());
 		
 		if (userObj == null)
 		{
@@ -58,8 +57,8 @@ public class UserController {
 	@PostMapping("/register")
 	public String handleRegister(User user,Model model)
 	{
-		
 		boolean status = userServiceImpl.saveUser(user);
+		
 		if(status)
 		{
 			model.addAttribute("smsg","User Registerd");
