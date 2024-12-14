@@ -1,27 +1,26 @@
 package in.sunnyit.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import in.sunnyit.exception.ProductNotFoundException;
 
 @Controller
 public class ProductController {
 
-	@GetMapping("/product")
-	public String getProduct() throws Exception
+	@GetMapping("/product/{pid}")
+	public String getProduct(@PathVariable ("pid") Integer pid,Model model) throws Exception
 	{
-		try {
-			//logic
-			throw new ProductNotFoundException("Invalid Data");
-
-		}
-		catch (Exception e)
+		if(pid >= 100)
 		{
-			//logger
+			throw new ProductNotFoundException("Invalid Product Id");
+		}else {
+		
+		model.addAttribute("msg", "Product Name : Apple Mobiles");
+		
 		}
-		
-		
 		return "index";
 		
 	}

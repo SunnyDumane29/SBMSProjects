@@ -11,7 +11,7 @@ public class AppExceptionHandler {
 	{
 		//logic
 		
-		return "exView";
+		return "prodExView";
 		
 	}
 	
