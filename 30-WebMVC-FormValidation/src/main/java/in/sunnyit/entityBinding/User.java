@@ -1,12 +1,21 @@
 package in.sunnyit.entityBinding;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 public class User {
 	
+	@NotEmpty(message = "Name is Mandatory")
+	@Size (min= 3, max = 8, message = "Min 3 and Max 8 Character valid")
 	private String name;
 	
+	@NotEmpty(message = "Email is Mandatory")
+	@Email(message = "Enter valid Email")
 	private String email;
 	
+	@NotNull(message = "Number is Mandatory")
 	private Long phno;
 
 	@Override

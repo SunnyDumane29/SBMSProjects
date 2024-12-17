@@ -20,17 +20,19 @@
        <table>
          <tr>  
             <td> Name : </td>
-             <td> <input type="text" th:field="*{name}"/> </td>
-         </tr>
-         
+             <td> <input type="text" th:field="*{name}" /> </td>
+             <td>  <p th:if="${#fields.hasErrors('name')}" th:errorclass="error" th:errors="*{name}" /> </td> 
+            
           <tr>  
             <td> Email : </td>
-             <td> <input type="text" th:field="*{email}"/> </td>
+             <td> <input type="text" th:field="*{email}" /> </td>
+             <td>  <p th:if="${#fields.hasErrors('email')}" th:errorclass="error" th:errors="*{email}" /> </td> 
          </tr>
          
           <tr>  
             <td> Phone No. : </td>
-             <td> <input type="number" th:field="*{phno}"/> </td>
+             <td> <input type="number" th:field="*{phno}" /> </td>
+             <td>  <p th:if="${#fields.hasErrors('phno')}" th:errorclass="error" th:errors="*{phno}" /> </td> 
          </tr>
          
          
