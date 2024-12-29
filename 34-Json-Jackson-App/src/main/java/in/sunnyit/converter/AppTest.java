@@ -18,7 +18,7 @@ public class AppTest {
 		//convert java object to json 
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.writeValue(new File("customer.json"), cm);
-		
+		 
 		System.out.println("serialization complete");
 		
 		
