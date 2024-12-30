@@ -13,6 +13,12 @@ public class Customer {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", email=" + email + "]";
+	}
+
+
 	public Customer(Integer rid, String name, String email) {
 		super();
 		this.id = rid;

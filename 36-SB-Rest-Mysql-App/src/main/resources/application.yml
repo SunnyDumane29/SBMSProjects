@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: 36-SB-Rest-Mysql-App
+  datasource:
+    password: Admin@1234
+    url: jdbc:mysql://localhost:3306/sbms39
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+ 
