@@ -33,7 +33,7 @@ public class CourseRestController {
 	}
 	
 	@GetMapping (value = "/course/{cid}")
-	public ResponseEntity <Course> getCourse(@PathVariable Integer cid)
+	public ResponseEntity <Course> getCourse(@PathVariable ("cid") Integer cid)
 	{
 		Course courseData = courseService.getById(cid);
 		
@@ -61,7 +61,7 @@ public class CourseRestController {
 	}
 	
 	@DeleteMapping (value = "/course/{cid}")
-	public ResponseEntity <String> deleteCourse(@PathVariable Integer cid)
+	public ResponseEntity <String> deleteCourse(@PathVariable ("cid") Integer cid)
 	{
 		String status = courseService.deleteById(cid);
 		return new ResponseEntity<>(status,HttpStatus.OK);

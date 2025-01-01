@@ -1,6 +1,7 @@
 spring:
   application:
-    name: 36-SB-Rest-Mysql-App
+    name: 37-SB-TickitBooking-App-1
+    
   datasource:
     url: jdbc:mysql://localhost:3306/sbms39
     username: root
@@ -12,3 +13,4 @@ spring:
 
 server:
   port: 9191
+
