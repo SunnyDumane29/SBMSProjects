@@ -12,16 +12,18 @@ import in.sunnyit.binding.Product;
 @RestController
 public class ProductRestcontroller
 {
+	
+	
 
-	@GetMapping(value = "/product",produces = {"application/json"}) //"application/xml"
+	@GetMapping(value = "/product",produces = {"application/json","application/xml"}) //
 	public ResponseEntity<Product> getProduct()
-	{
+	{ 
 		Product p1= new  Product(101, "monitor", 1000.00);
-		
+		System.out.println(p1);
 		return  new ResponseEntity<>(p1,HttpStatus.OK);
 		
 	}
-	
+	 
 	
 	@PostMapping (value ="/addProduct", 
 			consumes={"application/json" ,"application/xml" },

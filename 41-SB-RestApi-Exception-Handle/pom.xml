@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.sunniit</groupId>
-	<artifactId>38-SB-RestApi-XMl-Data</artifactId>
+	<artifactId>41-SB-RestApi-Exception-Handle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>38-SB-RestApi-XMl-Data</name>
+	<name>41-SB-RestApi-Exception-Handle</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -34,10 +34,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<dependency>
-    <groupId>com.fasterxml.jackson.dataformat</groupId>
-    <artifactId>jackson-dataformat-xml</artifactId>
-</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -45,9 +41,6 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
