@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: GreetApi
+    
+  config:
+    import: optional:configserver:http://localhost:6262
+server:
+  port: 6464
+

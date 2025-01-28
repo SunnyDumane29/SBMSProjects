@@ -34,7 +34,6 @@ public class MyFilter implements GlobalFilter
 			throw new RuntimeException("Invalid Request");
 		}
 		
-		
 		List<String> listToken = headers.get("token");
 		
 		if (!(listToken.get(0).equals("sunnyit@1234")))

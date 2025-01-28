@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: WelcomeApi
+  config:
+    import: optional:configserver:http://localhost:6262
+    
+  server:
+    port: 6363
